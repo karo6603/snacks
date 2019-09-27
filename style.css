@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+.remove {
+  height: 10%;
+  width: 10%;
+  transform: rotate(720deg);
+  opacity: 0;
+  overflow: hidden;
+}
+.notValid {
+  background: red;
+}

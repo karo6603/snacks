@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <input type="name" name="snackName" />
-      <textarea name="taste"></textarea>
-      <input type="price" name="snackPrice" />
-      <input type="rating" name="snackRating" />
-      <input type="submit" value="Submit" name="submit" />
+    <form id="addForm">
+      <label>Name</label><input type="name" name="snackName" />
+      <label>Taste</label><input type="taste" name="snackTaste" />
+      <label>Price</label><input type="price" name="snackPrice" />
+      <label>Rating</label><input type="rating" name="snackRating" />
+      <button type="submit" name="submit">Add new snack</button>
     </form>
-    <button>Add new snack</button>
+
+    <form id="editForm">
+      <label>Name</label><input type="name" name="snackName" />
+      <label>Taste</label><input type="taste" name="snackTaste" />
+      <label>Price</label><input type="price" name="snackPrice" />
+      <label>Rating</label><input type="rating" name="snackRating" />
+      <input type="hidden" name="id" />
+      <button type="submit" name="submit">Edit snack</button>
+    </form>
+
     <div id="app"></div>
     <template>
       <article class="snack">
@@ -22,7 +32,8 @@
         <h2></h2>
         <p></p>
         <div class="rating"></div>
-        <button>Delete snack</button>
+        <button class="btnDelete">Delete snack</button>
+        <button class="btnEdit">Edit snack</button>
       </article>
     </template>
     <script src="index.js"></script>
