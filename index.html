@@ -7,13 +7,23 @@
     <title>Document</title>
   </head>
   <body>
+    <form>
+      <input type="name" name="snackName" />
+      <textarea name="taste"></textarea>
+      <input type="price" name="snackPrice" />
+      <input type="rating" name="snackRating" />
+      <input type="submit" value="Submit" name="submit" />
+    </form>
     <button>Add new snack</button>
     <div id="app"></div>
     <template>
-      <h1></h1>
-      <h2></h2>
-      <p></p>
-      <div class="rating"></div>
+      <article class="snack">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+        <div class="rating"></div>
+        <button>Delete snack</button>
+      </article>
     </template>
     <script src="index.js"></script>
   </body>
